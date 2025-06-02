@@ -1,0 +1,91 @@
+.popup {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  z-index: 9999;
+  min-width: 300px;
+  max-width: 90%;
+  padding: 16px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  background: white;
+  border: 1px solid #e5e7eb;
+}
+
+.popup.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.message {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #1f2937; /* Dark gray for better readability */
+}
+
+/* Success styles */
+.success {
+  border-left: 4px solid #059669; /* Darker green */
+  background-color: #f0fdf4; /* Light green background */
+}
+
+.success .icon {
+  color: #059669; /* Darker green for icon */
+}
+
+.success .message {
+  color: #065f46; /* Dark green for text */
+}
+
+/* Error styles */
+.error {
+  border-left: 4px solid #dc2626; /* Darker red */
+  background-color: #fef2f2; /* Light red background */
+}
+
+.error .icon {
+  color: #dc2626; /* Darker red for icon */
+}
+
+.error .message {
+  color: #991b1b; /* Dark red for text */
+}
+
+/* Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 0;
+  }
+} 

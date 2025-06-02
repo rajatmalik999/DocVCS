@@ -1,0 +1,149 @@
+/* Overlay and Modal Centering */
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.18);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 24px 0 rgba(16, 30, 54, 0.18);
+  padding: 28px 24px 20px 24px;
+  min-width: 320px;
+  max-width: 98vw;
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.closeBtn:hover {
+  color: #222;
+}
+
+.title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: left;
+  color: #222;
+}
+
+.desc {
+  color: #6b7280;
+  font-size: 0.7rem;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.infoBox {
+  background: #f3f4f6;
+  border-radius: 10px;
+  padding: 14px 14px 10px 14px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.infoRow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.78rem;
+  color: #222;
+}
+.icon {
+  color: #6366f1;
+  font-size: 0.8em;
+}
+.label {
+  font-weight: 500;
+  color: #6b7280;
+}
+.value {
+  font-weight: 500;
+  color: #222;
+}
+.date {
+  color: #6b7280;
+  font-size: 0.7rem;
+  margin-left: 6px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 8px;
+}
+.cancelBtn {
+  background: none;
+  border: none;
+  color: #6366f1;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+.cancelBtn:hover {
+  background: #f3f4f6;
+  color: #3730a3;
+}
+.deleteBtn {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 22px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.18s;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.deleteBtn:hover {
+  background: #dc2626;
+}
+.trashIcon {
+  font-size: 0.8em;
+}
+
+@media (max-width: 600px) {
+  .modal {
+    min-width: 0;
+    width: 98vw;
+    padding: 14px 2vw 10px 2vw;
+  }
+  .infoBox {
+    padding: 10px 6px 7px 6px;
+  }
+  .actions {
+    gap: 6px;
+  }
+}

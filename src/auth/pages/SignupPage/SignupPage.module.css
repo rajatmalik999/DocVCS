@@ -1,0 +1,19 @@
+.signuppage {
+  background-color: lightgray;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.pageBg {
+  min-height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

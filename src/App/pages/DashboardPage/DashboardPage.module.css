@@ -1,0 +1,45 @@
+.dashboardContainer {
+  padding: 1.5rem;
+  background-color: #F3F4F6;
+  min-height: 100vh;
+}
+
+.dashboardStack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  min-height: 300px;
+  width: 100%;
+}
+
+/* Make all components fill their containers */
+.section > * {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dashboardContainer {
+    padding: 1rem;
+  }
+  
+  .dashboardStack {
+    gap: 1rem;
+  }
+  
+  .section {
+    padding: 1rem;
+    min-height: 250px;
+  }
+} 

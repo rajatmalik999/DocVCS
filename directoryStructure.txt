@@ -1,0 +1,99 @@
+├── App.css
+├── App.jsx
+├── assets
+│   ├── index.js
+│   └── react.svg
+├── components
+│   ├── EmailVerification
+│   │   ├── EmailVerification.jsx
+│   │   ├── EmailVerification.module.css
+│   │   └── index.js
+│   ├── ForgotPassword
+│   │   ├── ForgotPassword.jsx
+│   │   ├── ForgotPassword.module.css
+│   │   └── index.js
+│   ├── Login
+│   │   ├── Login.jsx
+│   │   ├── Login.module.css
+│   │   └── index.js
+│   ├── ResetPassword
+│   │   ├── ResetPassword.jsx
+│   │   ├── ResetPassword.module.css
+│   │   └── index.js
+│   ├── Signup
+│   │   ├── Signup.jsx
+│   │   ├── Signup.module.css
+│   │   └── index.js
+│   ├── SuccessfulVerification
+│   │   ├── SuccessfulVerification.jsx
+│   │   ├── SuccessfulVerification.module.css
+│   │   └── index.js
+│   ├── UserProfileSettings
+│   │   ├── UserProfileSettings.jsx
+│   │   ├── UserProfileSettings.module.css
+│   │   └── index.js
+│   └── index.js
+├── context
+│   └── index.js
+├── features
+│   ├── auth
+│   │   ├── Login
+│   │   │   ├── Login.jsx
+│   │   │   ├── Login.module.css
+│   │   │   └── index.js
+│   │   ├── Signup
+│   │   │   ├── Signup.jsx
+│   │   │   ├── Signup.module.css
+│   │   │   └── index.js
+│   │   └── index.js
+│   └── index.js
+├── hooks
+│   └── index.js
+├── index.css
+├── main.jsx
+├── pages
+│   ├── EmailVerificationPage
+│   │   ├── EmailVerificationPage.jsx
+│   │   ├── EmailVerificationPage.module.css
+│   │   └── index.js
+│   ├── ForgotPasswordPage
+│   │   ├── ForgotPasswordPage.jsx
+│   │   ├── ForgotPasswordPage.module.css
+│   │   └── index.js
+│   ├── LoginPage
+│   │   ├── LoginPage.jsx
+│   │   ├── LoginPage.module.css
+│   │   └── index.js
+│   ├── ResetPasswordPage
+│   │   ├── ResetPasswordPage.jsx
+│   │   ├── ResetPasswordPage.module.css
+│   │   └── index.js
+│   ├── SignupPage
+│   │   ├── SignupPage.jsx
+│   │   ├── SignupPage.module.css
+│   │   └── index.js
+│   ├── SuccessfulVerificationPage
+│   │   ├── SuccessfulVerificationPage.jsx
+│   │   ├── SuccessfulVerificationPage.module.css
+│   │   └── index.js
+│   ├── UserProfileSettingsPage
+│   │   ├── UserProfileSettingsPage.jsx
+│   │   ├── UserProfileSettingsPage.module.css
+│   │   └── index.js
+│   └── index.js
+├── router
+│   └── index.js
+├── services
+│   └── index.js
+├── store
+│   └── index.js
+├── styles
+│   ├── global
+│   │   ├── global.module.css
+│   │   └── index.js
+│   ├── index.js
+│   └── variables
+│       ├── index.js
+│       └── variables.module.css
+└── utils
+    └── index.js

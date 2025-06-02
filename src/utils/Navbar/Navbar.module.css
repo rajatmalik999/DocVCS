@@ -1,0 +1,142 @@
+/* Outer wrapper for centering and max width */
+.navbarWrapper {
+    max-width: 100vw;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px 0 rgba(16, 30, 54, 0.04);
+}
+
+/* The actual navbar content */
+.navbar {
+    width: 100%;
+    max-width: 1440px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 100%;
+    width: auto;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.notification {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.bell {
+    width: 24px;
+    height: 24px;
+    color: #222e39;
+}
+
+.badge {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: #222e39;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.85rem;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    border: 2px solid #fff;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #f3f4f6;
+    border: 2px solid #e5e7eb;
+}
+
+.avatarWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(16, 30, 54, 0.10);
+    min-width: 200px;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+}
+.menuIcon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.menuItem {
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #222e39;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.menuItem:hover {
+    background: #f3f4f6;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 0 0.5rem;
+        height: 48px;
+    }
+
+    .logo {
+        height: 28px;
+    }
+
+    .avatar {
+        width: 28px;
+        height: 28px;
+    }
+
+    .right {
+        gap: 0.7rem;
+    }
+}

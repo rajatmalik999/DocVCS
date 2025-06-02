@@ -1,0 +1,242 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 24px 0 rgba(16, 30, 54, 0.08);
+  padding: 40px 32px 24px 32px;
+  width: 100%;
+  min-width: 500px;
+    max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.logo {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo span {
+  width: 32px;
+  height: 32px;
+  background: url('data:image/svg+xml;utf8,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="16" fill="%23E5E7EB"/><path d="M11 16h10M11 20h10M11 12h10" stroke="%236B7280" stroke-width="2" stroke-linecap="round"/></svg>') center/contain no-repeat;
+  display: block;
+}
+
+.title {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 0 0 4px;
+  color: #222;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.googleBtn {
+  background: #fff;
+  height: 44px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-bottom: 18px;
+  transition: background 0.2s, border 0.2s;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.googleIcon {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg') center/contain no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #bfc3c9;
+  font-size: 0.97rem;
+  margin-bottom: 18px;
+  gap: 8px;
+  font-weight: 400;
+}
+.divider span {
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+  margin: 10px 0 4px;
+  letter-spacing: -0.2px;
+}
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  margin-bottom: 2px;
+  background: #f9fafb;
+  color: #222;
+  outline: none;
+  transition: border 0.2s;
+  font-family: inherit;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+.input:focus {
+  border-color: #6366f1;
+  background: #fff;
+}
+.input::placeholder {
+  color: #bfc3c9;
+  opacity: 1;
+  font-weight: 400;
+}
+.inputHint {
+  color: #bfc3c9;
+  font-size: 0.89rem;
+  margin-bottom: 6px;
+  margin-left: 2px;
+  font-weight: 400;
+}
+.passwordWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.showPasswordBtn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.eyeIcon {
+  width: 22px;
+  height: 22px;
+  background: url('data:image/svg+xml;utf8,<svg fill="none" height="22" viewBox="0 0 22 22" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M2 11c1.4-3.6 4.6-6 9-6s7.6 2.4 9 6c-1.4 3.6-4.6 6-9 6s-7.6-2.4-9-6z" stroke="%23bfc3c9" stroke-width="1.5"/><circle cx="11" cy="11" fill="%23fff" r="2.5" stroke="%23bfc3c9" stroke-width="1.5"/></svg>') center/contain no-repeat;
+  display: inline-block;
+}
+
+.forgotWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+.forgotLink {
+  color: #6b7280;
+  font-size: 0.97rem;
+  text-decoration: none;
+  transition: text-decoration 0.2s;
+  font-weight: 400;
+}
+.forgotLink:hover {
+  text-decoration: underline;
+}
+
+.loginBtn {
+  width: 100%;
+  background: #6b7280;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 13px 0;
+  font-size: 1.13rem;
+  font-weight: 500;
+  margin: 4px 0 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+  letter-spacing: 0.01em;
+}
+.loginBtn:hover {
+  background: #4b5563;
+}
+
+.footerText {
+  color: #6b7280;
+  font-size: 1.01rem;
+  margin: 10px 0 0;
+  text-align: center;
+  font-weight: 400;
+}
+.createLink {
+  color: #222;
+  text-decoration: underline;
+  margin-left: 4px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.createLink:hover {
+  color: #6366f1;
+}
+
+.copyright {
+  color: #bfc3c9;
+  font-size: 0.93rem;
+  margin-top: 28px;
+  text-align: center;
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 24px 8px 16px;
+    max-width: 98vw;
+    min-width: 0;
+  }
+  .container {
+    padding: 0 2vw;
+  }
+}

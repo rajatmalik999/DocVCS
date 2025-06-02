@@ -1,0 +1,358 @@
+.pageContainer {
+  min-height: 100vh;
+  background-color: #F3F4F6;
+  padding: 1.5rem 1rem;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLeft {
+  flex: 1;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
+
+.subtitle {
+  color: #6B7280;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.viewToggle {
+  display: flex;
+  gap: 0.25rem;
+  background-color: white;
+  padding: 0.25rem;
+  border-radius: 0.375rem;
+  border: 1px solid #E5E7EB;
+}
+
+.viewButton {
+  padding: 0.375rem;
+  border: none;
+  background: transparent;
+  color: #6B7280;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viewButton:hover {
+  color: #4F46E5;
+  background-color: #F3F4F6;
+}
+
+.viewButton.active {
+  color: #4F46E5;
+  background-color: #EEF2FF;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.grid.listView {
+  grid-template-columns: 1fr;
+}
+
+.card {
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+  border: 1px solid #E5E7EB;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnailContainer {
+  position: relative;
+  height: 140px;
+  background: #F3F4F6;
+  overflow: hidden;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.card:hover .thumbnail {
+  transform: scale(1.03);
+}
+
+.favoriteButton {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 1.75rem;
+  height: 1.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6B7280;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.favoriteButton:hover {
+  color: #4F46E5;
+  transform: scale(1.05);
+}
+
+.content {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.documentTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
+
+.description {
+  color: #6B7280;
+  font-size: 0.813rem;
+  margin-bottom: 0.75rem;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.stats {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #6B7280;
+  font-size: 0.813rem;
+}
+
+.statIcon {
+  font-size: 0.875rem;
+}
+
+.divider {
+  height: 1px;
+  background-color: #E5E7EB;
+  margin: 0.75rem -1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  gap: 0.75rem;
+}
+
+.editorInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.editorImage {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.editorDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.editorName {
+  font-size: 0.813rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.editorRole {
+  font-size: 0.75rem;
+  color: #6B7280;
+}
+
+.lastEdited {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #6B7280;
+  font-size: 0.75rem;
+}
+
+.clockIcon {
+  color: #6B7280;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.openButton {
+  padding: 0.5rem 0.75rem;
+  background: #4F46E5;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  font-size: 0.813rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+}
+
+.buttonIcon {
+  stroke: currentColor;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.openButton:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* List view specific styles */
+.card.listCard {
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.thumbnailContainer.listThumbnail {
+  width: 160px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.content.listContent {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.mainContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.listContent .footer {
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  gap: 1rem;
+  flex-shrink: 0;
+  width: auto;
+}
+
+.listContent .divider {
+  display: none;
+}
+
+.listContent .openButton {
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .card.listCard {
+    flex-direction: column;
+  }
+
+  .thumbnailContainer.listThumbnail {
+    width: 100%;
+    height: 140px;
+  }
+
+  .content.listContent {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .listContent .footer {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .listContent .openButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+
+  .viewToggle {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .lastEdited {
+    margin-left: 2.125rem;
+  }
+}

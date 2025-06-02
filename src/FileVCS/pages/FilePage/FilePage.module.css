@@ -1,0 +1,38 @@
+.filepage {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* Prevent flex items from overflowing */
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.fileDisplayWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.chatWrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sidePanel {
+  width: 320px;
+  min-height: 600px;
+  background: #f9fafb;
+  border-left: 1.5px solid #f3f4f6;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
